@@ -14,7 +14,7 @@ __all__ = ()
 
 async def create_session() -> None:
     """
-    Creates a new session.
+    Creates a new telethon session.
 
     Usage:
         make create-session

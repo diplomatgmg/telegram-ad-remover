@@ -13,6 +13,7 @@ AD_PATTERN = re.compile("|".join(app_config.patterns), re.IGNORECASE)
 
 
 async def new_message_handler(event: NewMessage.Event) -> None:
+    """Handles new messages."""
     logger.debug("Handling new message: %s from chat id: %s", event.message.id, event.chat_id)
 
     if AD_PATTERN.search(event.message.message):
