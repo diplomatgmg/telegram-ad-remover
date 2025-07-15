@@ -20,7 +20,7 @@ lint: # run linters and formatters
 	uv run mypy .
 
 lint-fix: # run linters and formatters with fix
-	@uv run ruff check . && \
+	@uv run ruff check . --fix && \
 	uv run isort . && \
 	uv run ruff format . && \
 	uv run mypy .
