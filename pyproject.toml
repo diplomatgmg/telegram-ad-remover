@@ -5,6 +5,8 @@ description = "A simple userbot to automatically clean advertising from your Tel
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "pydantic>=2.11.7",
+    "pydantic-settings>=2.10.1",
     "uvloop>=0.21.0",
 ]
 
@@ -32,6 +34,7 @@ lint.ignore = [
 
 [tool.mypy]
 mypy_path = "src"
+plugins = "pydantic.mypy"
 incremental = true
 warn_return_any = true
 warn_unused_configs = true
