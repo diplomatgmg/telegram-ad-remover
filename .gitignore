@@ -132,6 +132,7 @@ env.bak/
 venv.bak/
 *session.session
 *session.session-journal
+filter_config.toml
 
 # Spyder project settings
 .spyderproject
