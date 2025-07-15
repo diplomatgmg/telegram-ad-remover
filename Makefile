@@ -24,3 +24,7 @@ lint-fix: # run linters and formatters with fix
 	uv run isort . && \
 	uv run ruff format . && \
 	uv run mypy .
+
+create-session: # create telethon session
+	@echo "Building image..."
+	@docker compose run --rm --quiet app python src/create_session.py
