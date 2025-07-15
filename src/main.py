@@ -1,8 +1,8 @@
 import uvloop
 
 
-async def main():
-    print("Hello from telegram-ad-remover!")
+async def main() -> None:
+    pass
 
 
 if __name__ == "__main__":
