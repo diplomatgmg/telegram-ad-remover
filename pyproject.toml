@@ -1,0 +1,14 @@
+[project]
+name = "telegram-ad-remover"
+version = "0.1.0"
+description = "A simple userbot to automatically clean advertising from your Telegram channels."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "uvloop>=0.21.0",
+]
+
+[dependency-groups]
+dev = [
+    "hupper>=1.12.1",
+]
