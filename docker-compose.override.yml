@@ -4,3 +4,5 @@ services:
       context: .
       dockerfile: Dockerfile
       target: ${ENV_MODE}
+    volumes:
+      - ./src:/app/src

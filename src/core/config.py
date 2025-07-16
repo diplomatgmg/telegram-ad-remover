@@ -9,7 +9,7 @@ __all__ = [
 ]
 
 BASE_DIR = Path(__file__).parent.parent
-FILTER_CONFIG_TOML_PATH = BASE_DIR / "core" / "filter_config.toml"
+FILTER_CONFIG_TOML_PATH = BASE_DIR / "filter_config.toml"
 
 
 class AppConfig(BaseSettings):

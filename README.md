@@ -35,7 +35,7 @@ APP_TELETHON_API_HASH=<your_api_hash>
 
 ### 3. Configure filters and channels
 
-Edit the file `src/core/filter_config.toml`:
+Edit the file `src/filter_config.toml`:
 
 ```toml
 channel_ids = [
@@ -73,7 +73,7 @@ make up
 
 - `src/main.py` — entry point, launches the client and message handler.
 - `src/handlers.py` — handles new messages and ad removal.
-- `src/core/filter_config.toml` — channels and filters configuration.
+- `src/filter_config.toml` — channels and filters configuration.
 - `src/client.py` — Telegram client initialization.
 - `src/create_session.py` — user session creation.
 - `src/logger/` — logging setup.
