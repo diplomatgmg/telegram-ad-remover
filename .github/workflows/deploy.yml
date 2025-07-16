@@ -20,7 +20,7 @@ jobs:
           host: ${{ vars.SERVER_IP }}
           username: ${{ vars.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "docker-compose.yml, Makefile"
+          source: "docker-compose.yml, Makefile, src"
           target: "/srv/${{ vars.ENV_PROJECT_NAME }}"
 
       - name: Start Docker services

@@ -1,0 +1,7 @@
+channel_ids = [
+]
+
+patterns = [
+    "#реклама",
+    "erid:",
+]

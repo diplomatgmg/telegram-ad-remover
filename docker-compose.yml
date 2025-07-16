@@ -6,4 +6,4 @@ services:
     env_file:
       - .env
     volumes:
-      - ./src/filter_config.toml:/app/src/filter_config.toml
+      - ./src:/app/src
