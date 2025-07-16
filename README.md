@@ -35,7 +35,10 @@ APP_TELETHON_API_HASH=<your_api_hash>
 
 ### 3. Configure filters and channels
 
-Edit the file `src/filter_config.toml`:
+Create and edit the file `src/filter_config.toml`:
+```
+cp src/filter_config.toml.example src/filter_config.toml
+```
 
 ```toml
 channel_ids = [
