@@ -4,6 +4,9 @@ help:
 up: ## compose up
 	@docker compose up --wait -d
 
+restart: ## compose restart
+	@docker compose restart
+
 down: ## compose down
 	@docker compose down
 
