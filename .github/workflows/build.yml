@@ -30,8 +30,8 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           context: .
           tags: |
-            ${{ vars.ENV_DOCKER_USERNAME }}/${{ vars.ENV_PROJECT_NAME }}-${{ matrix.service }}:latest
-            ${{ vars.ENV_DOCKER_USERNAME }}/${{ vars.ENV_PROJECT_NAME }}-${{ matrix.service }}:${{ github.sha }}
+            ${{ vars.ENV_DOCKER_USERNAME }}/${{ vars.ENV_PROJECT_NAME }}:latest
+            ${{ vars.ENV_DOCKER_USERNAME }}/${{ vars.ENV_PROJECT_NAME }}:${{ github.sha }}
 
       - name: Notify Telegram on Failure
         if: failure()
