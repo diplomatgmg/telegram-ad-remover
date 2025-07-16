@@ -30,6 +30,8 @@ RUN uv sync --frozen --dev
 
 FROM deps-base AS deps-prod
 
+RUN uv sync --frozen
+
 
 # ================================= #
 #           DEVELOPMENT             #
@@ -39,3 +41,13 @@ FROM deps-dev AS development
 COPY ./src ${APP_PATH}/src
 
 CMD ["hupper", "-q", "-m", "src.main", "-w", "src/main.py"]
+
+
+# ================================= #
+#            PRODUCTION             #
+# ================================= #
+FROM deps-prod AS production
+
+COPY ./src ${APP_PATH}/src
+
+CMD ["python", "src/main.py"]
