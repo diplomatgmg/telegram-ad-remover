@@ -2,10 +2,7 @@ name: ${ENV_PROJECT_NAME}
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: ${ENV_MODE}
+    image: ${ENV_DOCKER_USERNAME}/${ENV_PROJECT_NAME}:latest
     env_file:
       - .env
     volumes:
