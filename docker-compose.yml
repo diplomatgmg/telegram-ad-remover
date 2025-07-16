@@ -5,5 +5,4 @@ services:
     image: ${ENV_DOCKER_USERNAME}/${ENV_PROJECT_NAME}:latest
     env_file:
       - .env
-    volumes:
-      - ./src:/app/src
+
